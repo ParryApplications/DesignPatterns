@@ -1,0 +1,16 @@
+package designPatterns;
+
+import javax.swing.text.html.HTMLDocument;
+import java.util.Iterator;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        User dto = new User("1", "Paras", 25);
+
+        Iterator<Integer> iterator = List.of(1, 2, 3, 4, 5, 6).iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
